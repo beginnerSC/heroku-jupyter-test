@@ -22,9 +22,7 @@ COPY . ./
 
 RUN pip install pip pipenv --upgrade
 
-RUN pip install numpy scipy pandas jupyterlab 
-
-# seaborn matplotlib scikit-learn jupyterlab jupyterlab-git voila rise nbdime nodejs notebook ptvsd xeus-python==0.9.0 nbgitpuller yfinance schedule panel hvplot get-all-tickers pyDiffMap arch pandas_ta xgboost
+RUN pip install numpy scipy pandas jupyterlab seaborn matplotlib scikit-learn jupyterlab jupyterlab-git voila rise nbdime nodejs notebook ptvsd xeus-python==0.9.0 nbgitpuller yfinance schedule panel hvplot get-all-tickers pyDiffMap arch pandas_ta xgboost
 
 CMD ["./scripts/postBuild.sh"]
 CMD ["./scripts/entrypoint.sh"]
