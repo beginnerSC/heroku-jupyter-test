@@ -11,4 +11,4 @@ Deploy 成功但環境有問題所以 Terminal prompt 是亂碼
 1. ```heroku container:push web -a myapp```
 1. ```heroku container:release web -a myapp```
 1. ```heroku open```
-
+1. 如果打不開，用 ```heroku logs -a myapp``` 查看錯誤訊息
