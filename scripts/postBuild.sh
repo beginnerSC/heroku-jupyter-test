@@ -1,6 +1,6 @@
 #!/bin/bash
 
-jupyter serverextension enable --py nbgitpuller --sys-prefix
+# jupyter serverextension enable --py nbgitpuller --sys-prefix
 jupyter serverextension enable voila --sys-prefix
 jupyter nbextension enable --py widgetsnbextension
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
