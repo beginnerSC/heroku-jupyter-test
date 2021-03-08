@@ -5,7 +5,7 @@ jupyter serverextension enable voila --sys-prefix
 jupyter nbextension enable --py widgetsnbextension
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
 jupyter labextension install @jupyter-voila/jupyterlab-previewls
-jupyter labextension install @ijmbarr/jupyterlab_spellchecker
+# jupyter labextension install @ijmbarr/jupyterlab_spellchecker
 jupyter labextension install @jupyterlab/debugger@0.3.3 --debug --no-build
 jupyter labextension install @jupyterlab/git
 jupyter labextension install @jupyterlab/toc
