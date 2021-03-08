@@ -6,6 +6,7 @@ seaborn
 matplotlib
 scikit-learn
 jupyterlab-git
+jupyterlab-spellchecker
 ipywidgets
 voila
 rise
