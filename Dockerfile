@@ -22,7 +22,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN chmod +x cnp
+RUN chmod +x ./script/cnp
 ENV PATH="${APP_HOME}/scripts:$PATH"
 
 RUN pip install --upgrade pip && pip install -r requirements.txt
