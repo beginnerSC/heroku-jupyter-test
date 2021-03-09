@@ -23,7 +23,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     rm -rf /var/lib/apt/lists/*
 
 RUN chmod +x cnp
-ENV PATH="${APP_HOME}:$PATH"
+ENV PATH="${APP_HOME}/scripts:$PATH"
 
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
