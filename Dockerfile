@@ -22,6 +22,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
+RUN chmod +x cnp
+ENV PATH="${APP_HOME}:$PATH"
+
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
 CMD ["./scripts/postBuild.sh"]
