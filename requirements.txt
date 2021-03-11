@@ -24,3 +24,4 @@ pyDiffMap
 arch
 pandas_ta
 xgboost
+pycrypto
