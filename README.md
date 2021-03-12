@@ -3,7 +3,7 @@
 Working but bash is weird (no auto completion for example).
 
 1. Change the password and public IP address in heroku-jupyter-test/conf/jupyter.py 
-2. scripts/gc is now hard coded to git clone from my repo
+2. There are convenient functions gc and cnp in scripts that do ```git commit``` and ```git push``` and ```git clone```. gc is now hard coded to git clone from my repo
 3. ```git clone https://github.com/beginnerSC/heroku-jupyter-test```
 4. ```heroku login -i```
 5. ```heroku container:login```
