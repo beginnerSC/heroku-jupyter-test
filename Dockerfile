@@ -34,7 +34,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN chmod +x ./scripts/cnp
+RUN chmod +x ./scripts/cnp              # commit and push
+RUN chmod +x ./scripts/gc               # git clone 
 ENV PATH="${APP_HOME}/scripts:$PATH"
 
 RUN pip install --upgrade pip && pip install -r requirements.txt
