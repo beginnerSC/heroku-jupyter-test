@@ -12,7 +12,7 @@ password = getpass()
 # o1 = AES.new(password.ljust(16), AES.MODE_CFB, '*'*16)
 # encrypted = o1.encrypt(LONG_AND_HARD_TO_REMEMBER_TOKEN)
 
-for repo in sys.argv:
+for repo in sys.argv[1:]:
     encrypted = b'!>k\x98%6\x9e,j\x88\xd8\x13\xa85Z#\xdb\xa5Q\xb2\xfc^\x15\xd6\xe6mH=\xb9\xe4~\x88\xea\x8f\xe2M\xc1\xf6\xec\xcd'
     aes = AES.new(password.ljust(16), AES.MODE_CFB, '*'*16) # key and initial vector both need to be 16 byptes
     token = aes.decrypt(encrypted).decode()
