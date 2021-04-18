@@ -25,3 +25,4 @@ arch
 pandas_ta
 xgboost
 pycrypto
+pandas_datareader
